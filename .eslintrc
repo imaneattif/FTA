@@ -1,0 +1,28 @@
+{
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "plugins": ["react"],
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "es2020": true,
+      "node": true
+    },
+    "settings": {
+      "react": {
+        "version": "detect" // Automatically detect the React version
+      }
+    },
+    "rules": {
+      "react/prop-types": 0, // Disable prop-types rule, use TypeScript for type checking
+      "no-unused-vars": "warn", // Change this to error to enforce no unused vars
+      "no-console": "off", // Consider turning this to warn or error for production
+      "react/react-in-jsx-scope": "off" // Not needed for React 17+
+    }
+  }
+  
